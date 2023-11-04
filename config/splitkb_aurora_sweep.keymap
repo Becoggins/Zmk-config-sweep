@@ -16,6 +16,9 @@
     flavor = "balanced";
 };
 
+&sl {
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -175,6 +178,14 @@
             mods = <(MOD_LSFT)>;
             continue-list = <UNDERSCORE BACKSPACE DELETE>;
         };
+        Smart_1: Smart_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SMART_1";
+            bindings = <&Smart_Num>, <&mo 1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -185,7 +196,7 @@
 &kp Q   &kp W        &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I                   &kp O             &mt DOUBLE_QUOTES SQT
 &kp A   &kp S        &kp D  &kp F  &kp G    &kp P  &kp H  &kp J                   &kp K             &kp L
 &kp Z   &kp X        &kp C  &kp V  &kp B    &kp N  &kp M  &mt SEMICOLON KP_COMMA  &mt COLON KP_DOT  &mt EXCLAMATION QUESTION
-&tog 1  &lt 2 SPACE                                                               &Smart_Num        &Smart_Shift
+&tog 1  &lt 2 SPACE                                                               &Smart_1          &Smart_Shift
             >;
         };
 
