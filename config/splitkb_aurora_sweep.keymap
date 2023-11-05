@@ -204,6 +204,14 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&Smart_Num 3 0>, <&sl 3>;
+
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
