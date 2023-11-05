@@ -181,18 +181,12 @@
         Smart_Num: Smart_Num {
             compatible = "zmk,behavior-hold-tap";
             label = "SMART_NUM";
-            bindings = <&mo>, <&Num_dance>;
+            bindings = <&mo>, <&none>;
 
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <900>;
-        };
-        Num_dance: Num_dance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NUM_DANCE";
-            #binding-cells = <0>;
-            bindings = <&Smart_Num 3 0>, <&sl 3>;
         };
         Smart_shift: Smart_shift_ {
             compatible = "zmk,behavior-mod-morph";
