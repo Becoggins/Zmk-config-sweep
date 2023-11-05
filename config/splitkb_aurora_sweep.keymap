@@ -181,7 +181,7 @@
         Smart_Num: Smart_Num {
             compatible = "zmk,behavior-hold-tap";
             label = "SMART_NUM";
-            bindings = <&mo>, <&none>;
+            bindings = <&mo>, <&Num_dance>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -209,10 +209,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W        &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I                &kp O             &mt DOUBLE_QUOTES SQT
-&kp A        &kp S        &kp D  &kp F  &kp G    &kp P  &kp H  &kp J                &kp K             &kp L
-&kp Z        &kp X        &kp C  &kp V  &kp B    &kp N  &kp M  &mt SEMICOLON COMMA  &mt COLON PERIOD  &mt EXCLAMATION QUESTION
-&lt 1 SPACE  &lt 2 ENTER                                                            &Smart_Num 3 0    &Smart_shift
+&kp Q   &kp W        &kp E  &kp R  &kp T    &kp Y  &kp U                  &kp I                &kp O             &kp P
+&kp A   &kp S        &kp D  &kp F  &kp G    &kp H  &kp J                  &kp K                &kp L             &kp N
+&kp Z   &kp X        &kp C  &kp V  &kp B    &kp M  &mt DOUBLE_QUOTES SQT  &mt SEMICOLON COMMA  &mt COLON PERIOD  &mt EXCLAMATION QUESTION
+&tog 1  &lt 2 SPACE                                                                            &Smart_Num 3 0    &Smart_shift
             >;
         };
 
