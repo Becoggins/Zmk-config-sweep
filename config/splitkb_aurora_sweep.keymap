@@ -188,7 +188,7 @@
         Smart_Num: Smart_Num {
             compatible = "zmk,behavior-hold-tap";
             label = "SMART_NUM";
-            bindings = <&none>, <&none>;
+            bindings = <&mo>, <&Num_dance>;
 
             #binding-cells = <2>;
             flavor = "balanced";
