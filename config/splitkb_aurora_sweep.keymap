@@ -227,10 +227,10 @@
 
         tri_layer {
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9  &none    &trans  &kp C_PREV  &kp C_VOL_UP       &kp C_NEXT  &bl BL_TOG
-&kp F11  &kp F4  &kp F5  &kp F6  &none    &trans  &trans      &kp C_VOLUME_DOWN  &trans      &bl BL_INC
-&kp F10  &kp F1  &kp F2  &kp F3  &none    &trans  &bt BT_CLR  &bt BT_NXT         &bt BT_PRV  &bl BL_DEC
-&trans   &trans                                                                  &kp C_MUTE  &kp C_PP
+&kp F12  &kp F7  &kp F8  &kp F9  &none    &none  &kp C_PREV  &kp C_VOL_UP       &kp C_NEXT  &bl BL_TOG
+&kp F11  &kp F4  &kp F5  &kp F6  &none    &none  &none       &kp C_VOLUME_DOWN  &none       &bl BL_INC
+&kp F10  &kp F1  &kp F2  &kp F3  &none    &none  &bt BT_CLR  &bt BT_NXT         &bt BT_PRV  &bl BL_DEC
+&trans   &trans                                                                 &kp C_MUTE  &kp C_PP
             >;
         };
 
