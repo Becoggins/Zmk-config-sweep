@@ -196,6 +196,12 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+        Num_dance: Num_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NUM_DANCE";
+            #binding-cells = <0>;
+            bindings = <&sl 3>;
+        };
     };
 
     keymap {
