@@ -16,7 +16,20 @@
     flavor = "balanced";
 };
 
+&sk {
+    release-after-ms = <900>;
+};
+
 &sl {
+    release-after-ms = <0>;
+    ignore-modifiers;
+
+    /delete-property/ quick-release;
+};
+
+&lt {
+    flavor = "balanced";
+    quick-tap-ms = <900>;
 };
 
 / {
@@ -177,14 +190,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
             continue-list = <UNDERSCORE BACKSPACE DELETE>;
-        };
-        Smart_1: Smart_1 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SMART_1";
-            bindings = <&Smart_Num>, <&mo 1>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
         };
     };
 
