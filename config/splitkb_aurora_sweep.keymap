@@ -107,7 +107,7 @@
             key-positions = <14 24>;
         };
 
-        Backspace {
+        Left_Backspace {
             bindings = <&kp BSPC>;
             key-positions = <7 6>;
         };
@@ -177,7 +177,7 @@
             key-positions = <15 25>;
         };
 
-        Backspace {
+        Right_Backspace {
             bindings = <&kt BACKSPACE>;
             key-positions = <14 13>;
         };
