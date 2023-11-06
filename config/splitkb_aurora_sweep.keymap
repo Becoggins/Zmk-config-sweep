@@ -118,7 +118,7 @@
         };
 
         Multiply {
-            bindings = <&kp KP_ASTERISK>;
+            bindings = <&kp ASTRK>;
             key-positions = <7 17>;
         };
 
