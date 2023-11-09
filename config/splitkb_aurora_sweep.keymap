@@ -178,7 +178,7 @@
         };
 
         Right_Backspace {
-            bindings = <&kt BACKSPACE>;
+            bindings = <&kp BSPC>;
             key-positions = <14 13>;
         };
 
