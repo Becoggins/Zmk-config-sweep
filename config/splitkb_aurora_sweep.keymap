@@ -288,12 +288,12 @@
             >;
         };
 
-        right_layer {
+        Nav {
             bindings = <
-&mt HOME INS     &kp KP_N7        &kp KP_N8         &kp KP_N9         &kp PAGE_UP      &kp PAGE_UP    &kp BSPC               &kp UP_ARROW           &kp DEL                &none
-&Hml LGUI KP_N0  &Hml LALT KP_N4  &Hml LCTRL KP_N5  &Hml LSHFT KP_N6  &kp ENTER        &kp PAGE_DOWN  &Hmr RSHFT LEFT_ARROW  &Hmr RCTRL DOWN_ARROW  &Hmr RALT RIGHT_ARROW  &Hmr RGUI ENTER
-&mt END DELETE   &kp KP_N1        &kp KP_N2         &kp KP_N3         &kp PAGE_DOWN    &kp INS        &kp TAB                &kp LESS_THAN          &kp GREATER_THAN       &none
-&trans           &trans                                                                                                                             &none                  &kp K_CANCEL
+&mt HOME INS         &kp KP_N7            &kp KP_N8         &kp KP_N9              &kp PAGE_UP      &kp PAGE_UP    &kp BSPC                     &kp UP_ARROW           &kp DEL                     &none
+&Hml LEFT_GUI KP_N0  &Hml LEFT_ALT KP_N4  &Hml LCTRL KP_N5  &Hml LEFT_SHIFT KP_N6  &kp ENTER        &kp PAGE_DOWN  &Hmr RIGHT_SHIFT LEFT_ARROW  &Hmr RCTRL DOWN_ARROW  &Hmr RIGHT_ALT RIGHT_ARROW  &Hmr RIGHT_GUI ENTER
+&mt END DELETE       &kp KP_N1            &kp KP_N2         &kp KP_N3              &kp PAGE_DOWN    &kp INS        &kp TAB                      &kp LESS_THAN          &kp GREATER_THAN            &none
+&trans               &trans                                                                                                                                            &none                       &kp K_CANCEL
             >;
         };
 
@@ -306,7 +306,7 @@
             >;
         };
 
-        layer_3 {
+        Smart_Num {
             bindings = <
 &trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans  &trans
 &kp N0  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans
@@ -321,6 +321,15 @@
 &Hmr RIGHT_GUI N  &Hmr RIGHT_ALT L  &Hmr RCTRL K  &Hmr RIGHT_SHIFT J  &kp H    &kp G  &Hml LEFT_SHIFT F  &Hml LCTRL D  &Hml LEFT_ALT S  &Hml LEFT_GUI A
 &kp BSLH          &kp DOT           &kp COMMA     &kp APOS            &kp M    &kp B  &kp V              &kp C         &kp X            &kp Z
 &Smart_shift      &Smart_Num 3 0                                                                                       &lt 2 SPACE      &tog 1
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&kp  &kp  &kp  &kp  &kp    &kp PG_UP  &kp KP_N9              &kp KP_N8         &kp KP_N7            &mt HOME INS
+&kp  &kp  &kp  &kp  &kp    &kp ENTER  &Hml LEFT_SHIFT KP_N6  &Hml LCTRL KP_N5  &Hml LEFT_ALT KP_N4  &Hml LEFT_GUI KP_N0
+&kp  &kp  &kp  &kp  &kp    &kp PG_DN  &kp KP_N7              &kp KP_N2         &kp KP_N1            &mt END DELETE
+&kp  &kp                                                                       &trans               &trans
             >;
         };
     };
