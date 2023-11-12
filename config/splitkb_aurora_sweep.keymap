@@ -226,13 +226,13 @@
 
         Swap_left_to_right_LH_Nav {
             bindings = <&tog 5>;
-            key-positions = <13 12 11>;
+            key-positions = <13 12 11 10>;
             layers = <1 5>;
         };
 
         Swap_left_to_right_RH_Nav {
             bindings = <&tog 5>;
-            key-positions = <16 17 18>;
+            key-positions = <17 18 16 19>;
             layers = <1 5>;
         };
     };
