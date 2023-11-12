@@ -226,13 +226,13 @@
 
         Swap_left_to_right_LH_Nav1 {
             bindings = <&tog 5>;
-            key-positions = <13 12 11>;
+            key-positions = <13 12 11 10>;
             layers = <1 5 0>;
         };
 
         Swap_left_to_right_RH_Nav1 {
             bindings = <&tog 5>;
-            key-positions = <18 17 16>;
+            key-positions = <18 17 16 19>;
             layers = <1 5 0>;
         };
     };
@@ -309,7 +309,7 @@
             >;
         };
 
-        tri_layer {
+        Fin {
             bindings = <
 &kp F12        &kp F7        &kp F8         &kp F9         &none    &bl BL_TOG  &kp C_PREV                 &kp C_VOL_UP              &kp C_NEXT          &none
 &Hml LGUI F11  &Hml LALT F4  &Hml LCTRL F5  &Hml LSHFT F6  &none    &bl BL_INC  &Hmr RSHFT C_FAST_FORWARD  &Hmr RCTRL C_VOLUME_DOWN  &Hmr RALT C_REWIND  &Hmr RGUI K_MUTE
