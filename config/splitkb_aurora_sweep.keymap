@@ -3,7 +3,6 @@ hu/*
  *
  * SPDX-License-Identifier: MIT
  */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
@@ -33,7 +32,6 @@ hu/*
 };
 
 &caps_word {
-mods = <(MOD_LSFT)>;
 };
 
 / {
