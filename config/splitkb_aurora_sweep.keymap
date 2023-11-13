@@ -250,7 +250,7 @@
         Smart_shift: Smart_shift_ {
             compatible = "zmk,behavior-mod-morph";
             label = "SMART_SHIFT ";
-            bindings = <&sk LSHFT>, <&caps_word>;
+            bindings = <&caps_word>, <&sk LSHFT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
