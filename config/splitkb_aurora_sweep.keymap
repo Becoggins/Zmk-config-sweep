@@ -260,7 +260,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NUM_DANCE";
             #binding-cells = <0>;
-            bindings = <&sl 3>;
+            bindings = <&sl 3>, <&Cap_Num>;
         };
         Hml: Hml {
             compatible = "zmk,behavior-hold-tap";
@@ -285,6 +285,12 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
+        };
+        Cap_Num: Cap_Num {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAP_NUM";
+            #binding-cells = <0>;
+            continue-list = <N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
         };
     };
 
