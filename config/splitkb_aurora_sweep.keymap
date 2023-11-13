@@ -295,6 +295,12 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
         };
+        Question_Explanation: Question_Explanation {
+            compatible = "zmk,behavior-tap-dance";
+            label = "QUESTION_EXPLANATION";
+            #binding-cells = <0>;
+            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+        };
     };
 
     keymap {
