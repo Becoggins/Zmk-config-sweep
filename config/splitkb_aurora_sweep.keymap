@@ -1,4 +1,4 @@
-/*
+hu/*
  * Copyright (c) 2022 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -33,7 +33,6 @@
 };
 
 &caps_word {
-# mods = <(MOD_LSFT)>;
 /delete-property/ ignore-modifiers;
 };
 
