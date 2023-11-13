@@ -33,7 +33,7 @@ hu/*
 };
 
 &caps_word {
-/delete-property/ ignore-modifiers;
+mods = <(MOD_LSFT)>;
 };
 
 / {
