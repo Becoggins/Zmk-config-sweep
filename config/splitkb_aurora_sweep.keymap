@@ -31,11 +31,6 @@ hu/*
     quick-tap-ms = <900>;
 };
 
-&caps_word {
-
-     /delete-property/ ignore-modifiers;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
