@@ -32,6 +32,10 @@
     quick-tap-ms = <900>;
 };
 
+&caps_word {
+    mods = <(MOD_LSFT)>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -250,7 +254,8 @@
         Smart_shift: Smart_shift_ {
             compatible = "zmk,behavior-mod-morph";
             label = "SMART_SHIFT ";
-            bindings = <&sk LSHFT>;
+            bindings = <&sk LSHFT>, <&caps_word>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
