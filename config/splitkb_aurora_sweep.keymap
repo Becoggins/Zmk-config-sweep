@@ -31,6 +31,10 @@ hu/*
     quick-tap-ms = <900>;
 };
 
+&caps_word {
+    mods = <(MOD_LSFT)>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
