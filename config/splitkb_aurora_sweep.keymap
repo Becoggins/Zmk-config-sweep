@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 &mt {
     //  flavor = "tap-preferred";
@@ -136,12 +135,12 @@
         };
 
         Left_parentheses_hold_lesser {
-            bindings = <&mt LESS_THAN LEFT_PARENTHESIS>;
+            bindings = <&LParenthesis_Lesser>;
             key-positions = <16 17>;
         };
 
         Right_parentheses_hold_greater {
-            bindings = <&mt GREATER_THAN RIGHT_PARENTHESIS>;
+            bindings = <&RParenthesis_Greater>;
             key-positions = <17 18>;
         };
 
@@ -161,12 +160,12 @@
         };
 
         Left_bracket_hold_Brace {
-            bindings = <&mt LEFT_BRACE LEFT_BRACKET>;
+            bindings = <&LBracket_LBrace>;
             key-positions = <27 26>;
         };
 
         Right_Bracket_hold_Brace {
-            bindings = <&mt RIGHT_BRACE RIGHT_BRACKET>;
+            bindings = <&RBracket_RBrace>;
             key-positions = <27 28>;
         };
 
@@ -186,12 +185,12 @@
         };
 
         Lalt {
-            bindings = <&kt LEFT_ALT>;
+            bindings = <&kp LALT>;
             key-positions = <20 21>;
         };
 
         Lshift {
-            bindings = <&kt LSHIFT>;
+            bindings = <&kp LSHIFT>;
             key-positions = <10 11>;
         };
 
@@ -326,6 +325,41 @@
             label = "SQT_DOUBLE_QUOTES";
             #binding-cells = <0>;
             bindings = <&kp SQT>, <&kp DOUBLE_QUOTES>;
+
+            tapping-term-ms = <500>;
+        };
+
+        RBracket_RBrace: RBracket_RBrace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RBRACKET_RBRACE";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACE>;
+        };
+
+        LBracket_LBrace: LBracket_LBrace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LBRACKET_LBRACE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET>, <&kp LEFT_BRACE>;
+
+            tapping-term-ms = <500>;
+        };
+
+        RParenthesis_Greater: RParenthesis_Greater {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RPARENTHESIS_GREATER";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
+
+            tapping-term-ms = <500>;
+        };
+
+        LParenthesis_Lesser: LParenthesis_Lesser {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LPARENTHESIS_LESSER";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
 
             tapping-term-ms = <500>;
         };
