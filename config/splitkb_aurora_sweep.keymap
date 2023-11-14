@@ -381,6 +381,23 @@
             tapping-term-ms = <500>;
             bindings = <&kp TILDE>, <&kp GRAVE>;
         };
+
+        Delete_End: Delete_End {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DELETE_END";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&kp DELETE>, <&kp END>;
+        };
+
+        Insert_Home: Insert_Home {
+            compatible = "zmk,behavior-tap-dance";
+            label = "INSERT_HOME";
+            #binding-cells = <0>;
+            bindings = <&kp INS>, <&kp HOME>;
+
+            tapping-term-ms = <500>;
+        };
     };
 
     keymap {
@@ -397,9 +414,9 @@
 
         Nav {
             bindings = <
-&mt HOME INS         &kp KP_N7            &kp KP_N8         &kp KP_N9              &kp PAGE_UP      &kp PAGE_UP    &kp BSPC                     &kp UP_ARROW           &kp DEL                     &none
-&Hml LEFT_GUI KP_N0  &Hml LEFT_ALT KP_N4  &Hml LCTRL KP_N5  &Hml LEFT_SHIFT KP_N6  &kp ENTER        &kp PAGE_DOWN  &Hmr RIGHT_SHIFT LEFT_ARROW  &Hmr RCTRL DOWN_ARROW  &Hmr RIGHT_ALT RIGHT_ARROW  &Hmr RIGHT_GUI ENTER
-&mt END DELETE       &kp KP_N1            &kp KP_N2         &kp KP_N3              &kp PAGE_DOWN    &kp INS        &kp TAB                      &kp LESS_THAN          &kp GREATER_THAN            &none
+&Insert_Home         &kp KP_N7            &kp KP_N8         &kp KP_N9              &kp PAGE_UP      &kp PAGE_UP    &kp BSPC                     &kp UP_ARROW           &kp DEL                     &Delete_End
+&Hml LEFT_GUI KP_N0  &Hml LEFT_ALT KP_N4  &Hml LCTRL KP_N5  &Hml LEFT_SHIFT KP_N6  &kp KP_ENTER     &kp PAGE_DOWN  &Hmr RIGHT_SHIFT LEFT_ARROW  &Hmr RCTRL DOWN_ARROW  &Hmr RIGHT_ALT RIGHT_ARROW  &Hmr RIGHT_GUI KP_ENTER
+&Delete_End          &kp KP_N1            &kp KP_N2         &kp KP_N3              &kp PAGE_DOWN    &Insert_Home   &kp TAB                      &kp LESS_THAN          &kp GREATER_THAN            &none
 &trans               &trans                                                                                                                                            &none                       &kp K_CANCEL
             >;
         };
