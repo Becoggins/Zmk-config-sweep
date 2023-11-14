@@ -47,7 +47,7 @@
 
         Escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <2 3>;
+            key-positions = <3 4>;
         };
 
         Pound {
@@ -117,7 +117,7 @@
 
         Delete {
             bindings = <&kp DELETE>;
-            key-positions = <7 6>;
+            key-positions = <6 5>;
         };
 
         Multiply {
@@ -242,6 +242,16 @@
         RCaps_lock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <8 7 6>;
+        };
+
+        Left_Space {
+            bindings = <&kp SPACE>;
+            key-positions = <2 3>;
+        };
+
+        Right_Space {
+            bindings = <&kp SPACE>;
+            key-positions = <7 6>;
         };
     };
 
