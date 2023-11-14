@@ -228,13 +228,13 @@
         };
 
         Swap_left_to_right_LH_Nav1 {
-            bindings = <&tog 5>;
+            bindings = <&sl 5>;
             key-positions = <13 12 11>;
             layers = <1>;
         };
 
         Swap_left_to_right_RH_Nav1 {
-            bindings = <&tog 5>;
+            bindings = <&sl 5>;
             key-positions = <18 17 16>;
             layers = <1>;
         };
@@ -418,7 +418,7 @@
 &Insert_Home         &kp KP_N7            &kp KP_N8         &kp KP_N9              &kp PAGE_UP      &kp PAGE_UP   &kp BSPC                     &kp UP_ARROW           &kp DEL                     &Insert_Home
 &Hml LEFT_GUI KP_N0  &Hml LEFT_ALT KP_N4  &Hml LCTRL KP_N5  &Hml LEFT_SHIFT KP_N6  &kp KP_ENTER     &kp KP_ENTER  &Hmr RIGHT_SHIFT LEFT_ARROW  &Hmr RCTRL DOWN_ARROW  &Hmr RIGHT_ALT RIGHT_ARROW  &Hmr RIGHT_GUI PAUSE_BREAK
 &Delete_End          &kp KP_N1            &kp KP_N2         &kp KP_N3              &kp PAGE_DOWN    &kp PG_DN     &kp TAB                      &kp LESS_THAN          &kp GREATER_THAN            &Delete_End
-&trans               &to 5                                                                                                                                            &none                       &kp K_CANCEL
+&trans               &trans                                                                                                                                           &none                       &kp K_CANCEL
             >;
         };
 
@@ -454,7 +454,7 @@
 &none                 &kp BSPC                   &kp UP_ARROW           &kp DEL                      &kp PG_UP    &kp PG_UP  &kp KP_N9              &kp KP_N8         &kp KP_N7            &mt HOME INS
 &Hmr RIGHT_GUI ENTER  &Hmr RIGHT_ALT LEFT_ARROW  &Hmr RCTRL DOWN_ARROW  &Hmr LEFT_SHIFT RIGHT_ARROW  &kp PG_DN    &kp ENTER  &Hml LEFT_SHIFT KP_N6  &Hml LCTRL KP_N5  &Hml LEFT_ALT KP_N4  &Hml LEFT_GUI KP_N0
 &none                 &kp LESS_THAN              &kp GREATER_THAN       &kp TAB                      &kp INS      &kp PG_DN  &kp KP_N7              &kp KP_N2         &kp KP_N1            &mt END DELETE
-&kp K_CANCEL          &tog 5                                                                                                                                          &trans               &trans
+&kp K_CANCEL          &trans                                                                                                                                          &trans               &trans
             >;
         };
     };
