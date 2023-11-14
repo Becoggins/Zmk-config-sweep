@@ -33,7 +33,7 @@
 };
 
 &caps_word {
-    mods = <(MOD_LSFT)>;
+    continue-list = <UNDERSCORE>;
 };
 
 / {
