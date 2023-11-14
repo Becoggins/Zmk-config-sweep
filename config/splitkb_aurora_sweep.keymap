@@ -45,7 +45,7 @@
         };
 
         Enter {
-            bindings = <&kp KP_ENTER>;
+            bindings = <&kp ENTER>;
             key-positions = <2 3>;
         };
 
@@ -70,7 +70,7 @@
         };
 
         Repeat {
-            bindings = <&kp C_REPEAT>;
+            bindings = <&kp RET>;
             key-positions = <12 13>;
         };
 
@@ -105,7 +105,7 @@
         };
 
         Tiled {
-            bindings = <&kp TILDE>;
+            bindings = <&Tilde_Grave_Accent>;
             key-positions = <14 24>;
         };
 
@@ -372,6 +372,14 @@
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
 
             tapping-term-ms = <500>;
+        };
+
+        Tilde_Grave_Accent: Tilde_Grave_Accent {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TILDE_GRAVE_ACCENT";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&kp TILDE>, <&kp GRAVE>;
         };
     };
 
