@@ -424,10 +424,10 @@
 
         Fin {
             bindings = <
-&kp F12        &kp F7        &kp F8         &kp F9         &none    &bl BL_TOG  &kp C_PREV         &kp K_VOLUME_UP           &kp C_NEXT          &kt K_PLAY_PAUSE
-&Hml LGUI F11  &Hml LALT F4  &Hml LCTRL F5  &Hml LSHFT F6  &none    &bl BL_INC  &Hmr RSHFT K_NEXT  &Hmr RCTRL K_VOLUME_DOWN  &Hmr RALT C_REWIND  &Hmr RGUI K_MUTE
-&kp F10        &kp F1        &kp F2         &kp F3         &none    &bl BL_DEC  &bt BT_CLR         &bt BT_NXT                &bt BT_PRV          &kp K_CALCULATOR
-&trans         &trans                                                                                                        &kp C_MUTE          &kp C_PP
+&kp F12        &kp F7        &kp F8         &kp F9         &none    &bl BL_TOG  &kp C_PREV         &kp K_VOLUME_UP           &kp C_NEXT            &kt K_PLAY_PAUSE
+&Hml LGUI F11  &Hml LALT F4  &Hml LCTRL F5  &Hml LSHFT F6  &none    &bl BL_INC  &Hmr RSHFT K_NEXT  &Hmr RCTRL K_VOLUME_DOWN  &Hmr RALT K_PREVIOUS  &Hmr RGUI K_MUTE
+&kp F10        &kp F1        &kp F2         &kp F3         &none    &bl BL_DEC  &bt BT_CLR         &bt BT_NXT                &bt BT_PRV            &kp K_REFRESH
+&trans         &trans                                                                                                        &kp C_MUTE            &kp C_PP
             >;
         };
 
