@@ -40,13 +40,13 @@
     combos {
         compatible = "zmk,combos";
 
-        Escape {
-            bindings = <&kp ESC>;
+        Backspace {
+            bindings = <&kp BACKSPACE>;
             key-positions = <1 2>;
         };
 
-        Enter {
-            bindings = <&kp ENTER>;
+        Escape {
+            bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
         };
 
@@ -178,11 +178,6 @@
         Underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <15 25>;
-        };
-
-        Right_Backspace {
-            bindings = <&kp BSPC>;
-            key-positions = <14 13>;
         };
 
         Lalt {
