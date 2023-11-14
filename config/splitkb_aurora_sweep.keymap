@@ -186,12 +186,12 @@
         };
 
         Lalt {
-            bindings = <&kt LALT>;
+            bindings = <&kt LEFT_ALT>;
             key-positions = <20 21>;
         };
 
         Lshift {
-            bindings = <&kt LSHFT>;
+            bindings = <&kt LSHIFT>;
             key-positions = <10 11>;
         };
 
@@ -201,12 +201,12 @@
         };
 
         Ralt {
-            bindings = <&kp RALT>;
+            bindings = <&kp RIGHT_ALT>;
             key-positions = <29 28>;
         };
 
         Rshift {
-            bindings = <&kp RSHFT>;
+            bindings = <&kp RSHIFT>;
             key-positions = <18 19>;
         };
 
