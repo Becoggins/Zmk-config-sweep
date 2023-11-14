@@ -70,7 +70,7 @@
             key-positions = <11 12>;
         };
 
-        Repeat {
+        Left_Enter {
             bindings = <&kp RET>;
             key-positions = <12 13>;
         };
