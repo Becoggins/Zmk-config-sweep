@@ -112,12 +112,12 @@
 
         Left_Backspace {
             bindings = <&kp BSPC>;
-            key-positions = <7 6>;
+            key-positions = <7 8>;
         };
 
         Delete {
             bindings = <&kp DELETE>;
-            key-positions = <7 8>;
+            key-positions = <7 6>;
         };
 
         Multiply {
@@ -290,6 +290,8 @@
             label = "SEMICOLON_COMMA";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
+
+            tapping-term-ms = <500>;
         };
 
         Question_Exclamation: Question_Exclamation {
@@ -297,6 +299,8 @@
             label = "QUESTION_EXCLAMATION";
             #binding-cells = <0>;
             bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+
+            tapping-term-ms = <500>;
         };
 
         Smart_shift: Smart_shift {
@@ -313,6 +317,8 @@
             label = "PERIOD_COLON";
             #binding-cells = <0>;
             bindings = <&kp PERIOD>, <&kp COLON>;
+
+            tapping-term-ms = <500>;
         };
 
         SQT_Double_Quotes: SQT_Double_Quotes {
@@ -320,6 +326,8 @@
             label = "SQT_DOUBLE_QUOTES";
             #binding-cells = <0>;
             bindings = <&kp SQT>, <&kp DOUBLE_QUOTES>;
+
+            tapping-term-ms = <500>;
         };
     };
 
