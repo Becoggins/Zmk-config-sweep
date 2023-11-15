@@ -42,7 +42,7 @@
 
         Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <1 2>;
+            key-positions = <11 12>;
         };
 
         Escape {
@@ -67,12 +67,12 @@
 
         Tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <1 2>;
         };
 
         Left_Enter {
             bindings = <&kp RET>;
-            key-positions = <12 13>;
+            key-positions = <13 14>;
         };
 
         Backslash {
@@ -112,12 +112,12 @@
 
         Left_Backspace {
             bindings = <&kp BSPC>;
-            key-positions = <7 8>;
+            key-positions = <17 18>;
         };
 
         Delete {
             bindings = <&kp DELETE>;
-            key-positions = <6 7>;
+            key-positions = <5 6>;
         };
 
         Multiply {
@@ -137,12 +137,12 @@
 
         Left_parentheses_hold_lesser {
             bindings = <&LParenthesis_Lesser>;
-            key-positions = <16 17>;
+            key-positions = <6 7>;
         };
 
         Right_parentheses_hold_greater {
             bindings = <&RParenthesis_Greater>;
-            key-positions = <17 18>;
+            key-positions = <7 8>;
         };
 
         Slash {
@@ -246,12 +246,17 @@
 
         Left_Space {
             bindings = <&kp SPACE>;
-            key-positions = <3 4>;
+            key-positions = <12 13>;
         };
 
         Right_Space {
             bindings = <&kp SPACE>;
-            key-positions = <6 5>;
+            key-positions = <16 17>;
+        };
+
+        Right_Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 15>;
         };
     };
 
