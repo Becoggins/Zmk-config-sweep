@@ -47,7 +47,7 @@
 
         Escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <3 2>;
+            key-positions = <3 4>;
         };
 
         Pound {
@@ -257,6 +257,11 @@
         Right_Enter {
             bindings = <&kp ENTER>;
             key-positions = <16 15>;
+        };
+
+        Insert {
+            bindings = <&kp INS>;
+            key-positions = <2 3>;
         };
     };
 
