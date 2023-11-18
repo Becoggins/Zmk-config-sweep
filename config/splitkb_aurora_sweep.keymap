@@ -263,6 +263,18 @@
             key-positions = <26 27 28>;
             layers = <1 5>;
         };
+
+        Left_num_lock {
+            bindings = <&kp KP_NUMLOCK>;
+            key-positions = <3 4>;
+            layers = <1>;
+        };
+
+        Right_num_lock {
+            bindings = <&kp KP_NUMLOCK>;
+            key-positions = <5 6>;
+            layers = <1 5>;
+        };
     };
 
     behaviors {
