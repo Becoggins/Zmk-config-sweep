@@ -182,7 +182,7 @@
 
         Lalt {
             bindings = <&kp LALT>;
-            key-positions = <20 21>;
+            key-positions = <23 24>;
         };
 
         Lshift {
@@ -192,12 +192,12 @@
 
         Lctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <3 4>;
+            key-positions = <20 21>;
         };
 
         Ralt {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <29 28>;
+            key-positions = <25 26>;
         };
 
         Rshift {
@@ -207,7 +207,7 @@
 
         Rctrl {
             bindings = <&kp RCTRL>;
-            key-positions = <5 6>;
+            key-positions = <28 29>;
         };
 
         Swap_left_to_right_RH {
@@ -360,14 +360,14 @@
             label = "RBRACKET_RBRACE";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACE>;
+            bindings = <&kp RIGHT_BRACE>, <&kp RIGHT_BRACKET>;
         };
 
         LBracket_LBrace: LBracket_LBrace {
             compatible = "zmk,behavior-tap-dance";
             label = "LBRACKET_LBRACE";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET>, <&kp LEFT_BRACE>;
+            bindings = <&kp LEFT_BRACE>, <&kp LEFT_BRACKET>;
 
             tapping-term-ms = <500>;
         };
