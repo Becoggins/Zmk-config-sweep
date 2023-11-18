@@ -181,17 +181,17 @@
         };
 
         Lalt {
-            bindings = <&L_Alt_sticky_Alt>;
+            bindings = <&Hmr RALT RALT>;
             key-positions = <23 24>;
         };
 
         Lshift {
-            bindings = <&L_shift_sticky_shift>;
+            bindings = <&Hmr RSHIFT RSHIFT>;
             key-positions = <10 11>;
         };
 
         Lctrl {
-            bindings = <&L_Ctrl_sticky_Ctrl>;
+            bindings = <&Hmr RCTRL RCTRL>;
             key-positions = <20 21>;
         };
 
@@ -223,13 +223,13 @@
         };
 
         Swap_left_to_right_LH_Nav1 {
-            bindings = <&mo 5>;
+            bindings = <&to 5>;
             key-positions = <13 12 11>;
             layers = <1 5>;
         };
 
         Swap_left_to_right_RH_Nav1 {
-            bindings = <&mo 5>;
+            bindings = <&tog 5>;
             key-positions = <18 17 16>;
             layers = <1 5>;
         };
