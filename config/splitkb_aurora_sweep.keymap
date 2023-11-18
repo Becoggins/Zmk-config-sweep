@@ -415,41 +415,6 @@
             tapping-term-ms = <500>;
         };
 
-        S_alt: S_alt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "S_ALT";
-            #binding-cells = <0>;
-            bindings = <&kp S>, <&Gaming_home_row LALT>;
-
-            tapping-term-ms = <500>;
-        };
-
-        D_ctl: D_ctl {
-            compatible = "zmk,behavior-tap-dance";
-            label = "D_CTL";
-            #binding-cells = <0>;
-            bindings = <&kp D>, <&Gaming_home_row LCTRL>;
-        };
-
-        A_LUG: A_LUG {
-            compatible = "zmk,behavior-tap-dance";
-            label = "A_LUG";
-            #binding-cells = <0>;
-            bindings = <&kp A>, <&Gaming_home_row LGUI>;
-        };
-
-        Gaming_home_row: Gaming_home_row {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GAMING_HOME_ROW";
-            bindings = <&kp>;
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            hold-trigger-on-release;
-        };
-
         L_shift_sticky_shift: L_shift_sticky_shift {
             compatible = "zmk,behavior-tap-dance";
             label = "L_SHIFT_STICKY_SHIFT";
@@ -510,10 +475,10 @@
 
         Zero {
             bindings = <
-&kp Q   &kp W        &kp E   &kp R              &kp T    &kp Y  &kp U               &kp I             &kp O             &kp P
-&A_LUG  &S_alt       &D_ctl  &Hml LEFT_SHIFT F  &kp G    &kp H  &Hmr RIGHT_SHIFT J  &Hmr RCTRL K      &Hmr RIGHT_ALT L  &Hmr RGUI N
-&kp Z   &kp X        &kp C   &kp V              &kp B    &kp M  &SQT_Double_Quotes  &Semicolon_Comma  &Period_Colon     &Question_Exclamation
-&tog 1  &lt 2 SPACE                                                                                   &Smart_Num 3 0    &Smart_shift
+&kp Q   &kp W        &kp E  &kp R              &kp T    &kp Y  &kp U               &kp I             &kp O             &kp P
+&kp A   &kp S        &kp D  &Hml LEFT_SHIFT F  &kp G    &kp H  &Hmr RIGHT_SHIFT J  &Hmr RCTRL K      &Hmr RIGHT_ALT L  &Hmr RGUI N
+&kp Z   &kp X        &kp C  &kp V              &kp B    &kp M  &SQT_Double_Quotes  &Semicolon_Comma  &Period_Colon     &Question_Exclamation
+&tog 1  &lt 2 SPACE                                                                                  &Smart_Num 3 0    &Smart_shift
             >;
         };
 
