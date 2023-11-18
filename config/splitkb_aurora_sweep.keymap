@@ -42,7 +42,7 @@
 
         Backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <12 13>;
+            key-positions = <12 11>;
         };
 
         Escape {
@@ -112,7 +112,7 @@
 
         Left_Backspace {
             bindings = <&kp BSPC>;
-            key-positions = <17 16>;
+            key-positions = <17 18>;
         };
 
         Delete {
@@ -222,18 +222,6 @@
             layers = <0 4>;
         };
 
-        Swap_left_to_right_LH_Nav1 {
-            bindings = <&to 5>;
-            key-positions = <13 12 11>;
-            layers = <1 5>;
-        };
-
-        Swap_left_to_right_RH_Nav1 {
-            bindings = <&tog 5>;
-            key-positions = <18 17 16>;
-            layers = <1 5>;
-        };
-
         LCaps_lock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <1 2 3>;
@@ -246,12 +234,7 @@
 
         Left_Space {
             bindings = <&kp SPACE>;
-            key-positions = <12 11>;
-        };
-
-        Right_Space {
-            bindings = <&kp SPACE>;
-            key-positions = <17 18>;
+            key-positions = <13 12>;
         };
 
         Right_Enter {
@@ -262,6 +245,23 @@
         Insert {
             bindings = <&kp INS>;
             key-positions = <2 3>;
+        };
+
+        Right_Space {
+            bindings = <&kp SPACE>;
+            key-positions = <17 16>;
+        };
+
+        Swap_left_to_right_LH_Nav1 {
+            bindings = <&tog 5>;
+            key-positions = <11 12 13>;
+            layers = <1 5>;
+        };
+
+        Swap_left_to_right_RH_Nav1 {
+            bindings = <&to 5>;
+            key-positions = <18 17 16>;
+            layers = <1 5>;
         };
     };
 
