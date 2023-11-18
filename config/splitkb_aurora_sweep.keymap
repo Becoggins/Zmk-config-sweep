@@ -71,7 +71,7 @@
         };
 
         Left_Enter {
-            bindings = <&kp RET>;
+            bindings = <&Hml RGUI ENTER>;
             key-positions = <13 14>;
         };
 
@@ -196,17 +196,17 @@
         };
 
         Ralt {
-            bindings = <&R_Alt_sticky_Alt>;
+            bindings = <&Hmr RALT RALT>;
             key-positions = <25 26>;
         };
 
         Rshift {
-            bindings = <&R_shift_sticky_shift>;
+            bindings = <&Hmr RSHFT RSHFT>;
             key-positions = <18 19>;
         };
 
         Rctrl {
-            bindings = <&R_Ctrl_sticky_Ctrl>;
+            bindings = <&Hmr RCTRL RCTRL>;
             key-positions = <28 29>;
         };
 
@@ -255,7 +255,7 @@
         };
 
         Right_Enter {
-            bindings = <&kp ENTER>;
+            bindings = <&Hmr RGUI ENTER>;
             key-positions = <16 15>;
         };
 
