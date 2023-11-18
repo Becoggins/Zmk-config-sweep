@@ -41,7 +41,7 @@
         compatible = "zmk,combos";
 
         Backspace {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&Hml LCTRL BACKSPACE>;
             key-positions = <12 11>;
         };
 
@@ -111,7 +111,7 @@
         };
 
         Left_Backspace {
-            bindings = <&kp BSPC>;
+            bindings = <&Hmr RCTRL BACKSPACE>;
             key-positions = <17 18>;
         };
 
@@ -180,34 +180,14 @@
             key-positions = <15 25>;
         };
 
-        Lalt {
-            bindings = <&Hmr RALT RALT>;
-            key-positions = <23 24>;
-        };
-
         Lshift {
             bindings = <&Hmr RSHIFT RSHIFT>;
             key-positions = <10 11>;
         };
 
-        Lctrl {
-            bindings = <&Hmr RCTRL RCTRL>;
-            key-positions = <20 21>;
-        };
-
-        Ralt {
-            bindings = <&Hmr RALT RALT>;
-            key-positions = <25 26>;
-        };
-
         Rshift {
             bindings = <&Hmr RSHFT RSHFT>;
             key-positions = <18 19>;
-        };
-
-        Rctrl {
-            bindings = <&Hmr RCTRL RCTRL>;
-            key-positions = <28 29>;
         };
 
         Swap_left_to_right_RH {
@@ -233,7 +213,7 @@
         };
 
         Left_Space {
-            bindings = <&kp SPACE>;
+            bindings = <&Hml LALT SPACE>;
             key-positions = <13 12>;
         };
 
@@ -248,7 +228,7 @@
         };
 
         Right_Space {
-            bindings = <&kp SPACE>;
+            bindings = <&Hmr RALT SPACE>;
             key-positions = <17 16>;
         };
 
@@ -307,6 +287,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
+            hold-trigger-key-positions = <33 32>;
         };
 
         Hmr: Hmr {
@@ -423,60 +404,6 @@
             label = "INSERT_HOME";
             #binding-cells = <0>;
             bindings = <&kp INS>, <&kp HOME>;
-
-            tapping-term-ms = <500>;
-        };
-
-        L_shift_sticky_shift: L_shift_sticky_shift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "L_SHIFT_STICKY_SHIFT";
-            #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&sk LSHIFT>, <&kt LSHIFT>;
-
-            tapping-term-ms = <500>;
-        };
-
-        R_shift_sticky_shift: R_shift_sticky_shift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "R_SHIFT_STICKY_SHIFT";
-            #binding-cells = <0>;
-            bindings = <&kp RSHFT>, <&sk RSHIFT>, <&kt RSHIFT>;
-
-            tapping-term-ms = <500>;
-        };
-
-        L_Alt_sticky_Alt: L_Alt_sticky_Alt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "L_ALT_STICKY_ALT";
-            #binding-cells = <0>;
-            bindings = <&kp LALT>, <&sk LALT>, <&kt LALT>;
-
-            tapping-term-ms = <500>;
-        };
-
-        R_Alt_sticky_Alt: R_Alt_sticky_Alt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "R_ALT_STICKY_ALT";
-            #binding-cells = <0>;
-            bindings = <&kp RALT>, <&sk RALT>, <&kt RALT>;
-
-            tapping-term-ms = <500>;
-        };
-
-        R_Ctrl_sticky_Ctrl: R_Ctrl_sticky_Ctrl {
-            compatible = "zmk,behavior-tap-dance";
-            label = "R_CTRL_STICKY_CTRL";
-            #binding-cells = <0>;
-            bindings = <&kp RCTRL>, <&sk RCTRL>, <&kt RCTRL>;
-
-            tapping-term-ms = <500>;
-        };
-
-        L_Ctrl_sticky_Ctrl: L_Ctrl_sticky_Ctrl {
-            compatible = "zmk,behavior-tap-dance";
-            label = "L_CTRL_STICKY_CTRL";
-            #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&sk LCTRL>, <&kt LCTRL>;
 
             tapping-term-ms = <500>;
         };
