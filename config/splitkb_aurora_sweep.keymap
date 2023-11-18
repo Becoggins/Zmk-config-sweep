@@ -295,6 +295,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
+            hold-trigger-key-positions = <32>;
         };
 
         Hmr: Hmr {
@@ -308,6 +309,7 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
+            hold-trigger-key-positions = <31>;
         };
 
         Semicolon_Comma: Semicolon_Comma {
