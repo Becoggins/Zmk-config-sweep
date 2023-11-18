@@ -186,7 +186,7 @@
         };
 
         Lshift {
-            bindings = <&kp LSHIFT>;
+            bindings = <&L_shift_sticky_shift>;
             key-positions = <10 11>;
         };
 
@@ -448,6 +448,15 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
+        };
+
+        L_shift_sticky_shift: L_shift_sticky_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L_SHIFT_STICKY_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&kp LSHFT>, <&sk LSHIFT>;
+
+            tapping-term-ms = <500>;
         };
     };
 
