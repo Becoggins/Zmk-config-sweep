@@ -260,8 +260,8 @@
 
         Swap_left_to_right_RH_Nav1 {
             bindings = <&tog 5>;
-            key-positions = <27 26 28>;
-            layers = <1 5 0>;
+            key-positions = <16 17 18>;
+            layers = <1 5>;
         };
     };
 
