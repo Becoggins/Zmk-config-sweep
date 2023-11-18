@@ -181,7 +181,7 @@
         };
 
         Lalt {
-            bindings = <&kp LALT>;
+            bindings = <&L_Alt_sticky_Alt>;
             key-positions = <23 24>;
         };
 
@@ -191,22 +191,22 @@
         };
 
         Lctrl {
-            bindings = <&kp LCTRL>;
+            bindings = <&L_Ctrl_sticky_Ctrl>;
             key-positions = <20 21>;
         };
 
         Ralt {
-            bindings = <&kp RIGHT_ALT>;
+            bindings = <&R_Alt_sticky_Alt>;
             key-positions = <25 26>;
         };
 
         Rshift {
-            bindings = <&kp RSHIFT>;
+            bindings = <&R_shift_sticky_shift>;
             key-positions = <18 19>;
         };
 
         Rctrl {
-            bindings = <&kp RCTRL>;
+            bindings = <&R_Ctrl_sticky_Ctrl>;
             key-positions = <28 29>;
         };
 
@@ -454,7 +454,52 @@
             compatible = "zmk,behavior-tap-dance";
             label = "L_SHIFT_STICKY_SHIFT";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&sk LSHIFT>;
+            bindings = <&kp LSHFT>, <&sk LSHIFT>, <&kt LSHIFT>;
+
+            tapping-term-ms = <500>;
+        };
+
+        R_shift_sticky_shift: R_shift_sticky_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "R_SHIFT_STICKY_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&kp RSHFT>, <&sk RSHIFT>, <&kt RSHIFT>;
+
+            tapping-term-ms = <500>;
+        };
+
+        L_Alt_sticky_Alt: L_Alt_sticky_Alt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L_ALT_STICKY_ALT";
+            #binding-cells = <0>;
+            bindings = <&kp LALT>, <&sk LALT>, <&kt LALT>;
+
+            tapping-term-ms = <500>;
+        };
+
+        R_Alt_sticky_Alt: R_Alt_sticky_Alt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "R_ALT_STICKY_ALT";
+            #binding-cells = <0>;
+            bindings = <&kp RALT>, <&sk RALT>, <&kt RALT>;
+
+            tapping-term-ms = <500>;
+        };
+
+        R_Ctrl_sticky_Ctrl: R_Ctrl_sticky_Ctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "R_CTRL_STICKY_CTRL";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL>, <&sk RCTRL>, <&kt RCTRL>;
+
+            tapping-term-ms = <500>;
+        };
+
+        L_Ctrl_sticky_Ctrl: L_Ctrl_sticky_Ctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L_CTRL_STICKY_CTRL";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL>, <&sk LCTRL>, <&kt LCTRL>;
 
             tapping-term-ms = <500>;
         };
