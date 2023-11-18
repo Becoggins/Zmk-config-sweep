@@ -496,7 +496,7 @@
 
         Nav {
             bindings = <
-&Delete_End   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp PAGE_UP      &kp PAGE_UP   &none           &kp UP_ARROW    &none             &Delete_End
+&Delete_End   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp PAGE_UP      &kp PAGE_UP   &kp K_VOL_UP    &kp UP_ARROW    &kp K_VOL_DN      &Delete_End
 &kp KP_N0     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_ENTER     &kp KP_ENTER  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp PAUSE_BREAK
 &Insert_Home  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp PAGE_DOWN    &kp PG_DN     &kp TAB         &kp LESS_THAN   &kp GREATER_THAN  &Insert_Home
 &trans        &trans                                                                                          &trans            &kp K_CANCEL
@@ -532,7 +532,7 @@
 
         layer_5 {
             bindings = <
-&Delete_End      &none           &kp UP_ARROW      &none            &kp PG_UP        &kp PG_UP  &kp KP_N9  &kp KP_N8  &kp KP_N7  &Delete_End
+&Delete_End      &kp K_VOL_DN    &kp UP_ARROW      &kp K_VOL_UP     &kp PG_UP        &kp PG_UP  &kp KP_N9  &kp KP_N8  &kp KP_N7  &Delete_End
 &kp PAUSE_BREAK  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp ENTER        &kp ENTER  &kp KP_N6  &kp KP_N5  &kp KP_N4  &kp KP_N0
 &Insert_Home     &kp LESS_THAN   &kp GREATER_THAN  &kp TAB          &kp PAGE_DOWN    &kp PG_DN  &kp KP_N7  &kp KP_N2  &kp KP_N1  &Insert_Home
 &kp K_CANCEL     &trans                                                                                               &trans     &trans
