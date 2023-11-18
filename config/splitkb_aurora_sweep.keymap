@@ -484,10 +484,10 @@
 
         Nav {
             bindings = <
-&Insert_Home  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp PAGE_UP      &kp PAGE_UP   &kp BSPC        &kp UP_ARROW    &kp DEL                     &Insert_Home
-&kp KP_N0     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_ENTER     &kp KP_ENTER  &kp LEFT_ARROW  &kp DOWN_ARROW  &Hmr RIGHT_ALT RIGHT_ARROW  &kp PAUSE_BREAK
-&Delete_End   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp PAGE_DOWN    &kp PG_DN     &kp TAB         &kp LESS_THAN   &kp GREATER_THAN            &Delete_End
-&trans        &trans                                                                                          &none                       &kp K_CANCEL
+&Insert_Home  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp PAGE_UP      &kp PAGE_UP   &kp BSPC        &kp UP_ARROW    &kp DEL           &Insert_Home
+&kp KP_N0     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_ENTER     &kp KP_ENTER  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp PAUSE_BREAK
+&Delete_End   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp PAGE_DOWN    &kp PG_DN     &kp TAB         &kp LESS_THAN   &kp GREATER_THAN  &Delete_End
+&trans        &trans                                                                                          &trans            &kp K_CANCEL
             >;
         };
 
@@ -520,10 +520,10 @@
 
         layer_5 {
             bindings = <
-&none                 &kp BSPC                   &kp UP_ARROW           &kp DEL                      &kp PG_UP    &kp PG_UP  &kp KP_N9              &kp KP_N8         &kp KP_N7            &mt HOME INS
-&Hmr RIGHT_GUI ENTER  &Hmr RIGHT_ALT LEFT_ARROW  &Hmr RCTRL DOWN_ARROW  &Hmr LEFT_SHIFT RIGHT_ARROW  &kp PG_DN    &kp ENTER  &Hml LEFT_SHIFT KP_N6  &Hml LCTRL KP_N5  &Hml LEFT_ALT KP_N4  &Hml LEFT_GUI KP_N0
-&none                 &kp LESS_THAN              &kp GREATER_THAN       &kp TAB                      &kp INS      &kp PG_DN  &kp KP_N7              &kp KP_N2         &kp KP_N1            &mt END DELETE
-&kp K_CANCEL          &trans                                                                                                                                          &trans               &trans
+&Insert_Home     &kp BSPC        &kp UP_ARROW      &kp DEL          &kp PG_UP        &kp PG_UP  &kp KP_N9  &kp KP_N8  &kp KP_N7  &Insert_Home
+&kp PAUSE_BREAK  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp ENTER        &kp ENTER  &kp KP_N6  &kp KP_N5  &kp KP_N4  &kp KP_N0
+&Delete_End      &kp LESS_THAN   &kp GREATER_THAN  &kp TAB          &kp PAGE_DOWN    &kp PG_DN  &kp KP_N7  &kp KP_N2  &kp KP_N1  &Delete_End
+&kp K_CANCEL     &trans                                                                                               &trans     &trans
             >;
         };
     };
