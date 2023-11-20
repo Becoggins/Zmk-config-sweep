@@ -430,10 +430,10 @@
 
         Fin {
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9  &none    &bl BL_TOG  &kp C_PREV  &kp K_VOLUME_UP    &kp C_NEXT      &kt K_PLAY_PAUSE
+&kp F12  &kp F7  &kp F8  &kp F9  &none    &bl BL_TOG  &kp K_NEXT  &kp K_VOLUME_UP    &kp C_NEXT      &kt K_PLAY_PAUSE
 &kp F11  &kp F4  &kp F5  &kp F6  &none    &bl BL_INC  &kp K_NEXT  &kp K_VOLUME_DOWN  &kp K_PREVIOUS  &kp K_MUTE
 &kp F10  &kp F1  &kp F2  &kp F3  &none    &bl BL_DEC  &bt BT_CLR  &bt BT_NXT         &bt BT_PRV      &kp K_REFRESH
-&trans   &trans                                                                      &kp C_MUTE      &kp C_PP
+&trans   &trans                                                                      &trans          &trans
             >;
         };
 
@@ -448,10 +448,10 @@
 
         layer_4 {
             bindings = <
-&kp P             &kp O             &kp I         &kp U               &kp Y    &kp T  &kp R              &kp E         &kp W            &kp Q
-&Hmr RIGHT_GUI N  &Hmr RIGHT_ALT L  &Hmr RCTRL K  &Hmr RIGHT_SHIFT J  &kp H    &kp G  &Hml LEFT_SHIFT F  &Hml LCTRL D  &Hml LEFT_ALT S  &Hml LEFT_GUI A
-&kp BSLH          &kp DOT           &kp COMMA     &kp APOS            &kp M    &kp B  &kp V              &kp C         &kp X            &kp Z
-&none             &Smart_Num 3 0                                                                                       &lt 2 SPACE      &tog 1
+&kp P                  &kp O                   &kp I             &kp U               &kp Y    &kp T  &kp R  &kp E  &kp W                   &kp Q
+&kp N                  &kp L                   &kp K             &kp J               &kp H    &kp G  &kp D  &kp D  &kp S                   &kp A
+&Question_Exclamation  &Period_Colon           &Semicolon_Comma  &SQT_Double_Quotes  &kp M    &kp B  &kp V  &kp C  &kp X                   &kp Z
+&Smart_shift           &Smart_num_layer_2 2 3                                                                      &Smart_num_layer_2 2 3  &tog 1
             >;
         };
 
@@ -459,8 +459,8 @@
             bindings = <
 &Delete_End      &kp K_VOL_DN    &kp UP_ARROW      &kp K_VOL_UP     &kp PG_UP        &kp PG_UP  &kp KP_N9  &kp KP_N8  &kp KP_N7  &Delete_End
 &kp PAUSE_BREAK  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp ENTER        &kp ENTER  &kp KP_N6  &kp KP_N5  &kp KP_N4  &kp KP_N0
-&Insert_Home     &kp LESS_THAN   &kp GREATER_THAN  &kp TAB          &kp PAGE_DOWN    &kp PG_DN  &kp KP_N7  &kp KP_N2  &kp KP_N1  &Insert_Home
-&kp K_CANCEL     &trans                                                                                               &trans     &trans
+&Insert_Home     &kp LESS_THAN   &kp GREATER_THAN  &kp K_CANCEL     &kp PAGE_DOWN    &kp PG_DN  &kp KP_N7  &kp KP_N2  &kp KP_N1  &Insert_Home
+&trans           &trans                                                                                               &trans     &trans
             >;
         };
     };
