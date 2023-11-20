@@ -181,12 +181,12 @@
         };
 
         Lshift {
-            bindings = <&Hmr RSHIFT RSHIFT>;
+            bindings = <&Hmr RSHIFT TAB>;
             key-positions = <10 11>;
         };
 
         Rshift {
-            bindings = <&Hmr RSHFT RSHFT>;
+            bindings = <&Hmr RSHFT TAB>;
             key-positions = <18 19>;
         };
 
@@ -407,6 +407,15 @@
 
             tapping-term-ms = <500>;
         };
+
+        Smart_num_layer_2: Smart_num_layer_2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SMART_NUM_LAYER_2";
+            bindings = <&mo>, <&Smart_Num>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <900>;
+        };
     };
 
     keymap {
@@ -414,10 +423,10 @@
 
         Zero {
             bindings = <
-&kp Q   &kp W            &kp E  &kp R  &kp T    &kp Y  &kp U               &kp I             &kp O           &kp P
-&kp A   &kp S            &kp D  &kp F  &kp G    &kp H  &kp J               &kp K             &kp L           &kp N
-&kp Z   &kp X            &kp C  &kp V  &kp B    &kp M  &SQT_Double_Quotes  &Semicolon_Comma  &Period_Colon   &Question_Exclamation
-&tog 1  &lt 2 ALT_ERASE                                                                      &Smart_Num 3 0  &Smart_shift
+&kp Q   &kp W                   &kp E  &kp R  &kp T    &kp Y  &kp U               &kp I             &kp O                   &kp P
+&kp A   &kp S                   &kp D  &kp F  &kp G    &kp H  &kp J               &kp K             &kp L                   &kp N
+&kp Z   &kp X                   &kp C  &kp V  &kp B    &kp M  &SQT_Double_Quotes  &Semicolon_Comma  &Period_Colon           &Question_Exclamation
+&tog 1  &Smart_num_layer_2 2 3                                                                      &Smart_num_layer_2 2 3  &Smart_shift
             >;
         };
 
@@ -441,9 +450,9 @@
 
         Smart_Num {
             bindings = <
-&trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &trans  &trans  &trans  &trans
-&kp N0  &kp N4  &kp N5  &kp N6  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp N7  &kp N8  &kp N9  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
+&kp N0  &kp N4  &kp N5  &kp N6  &trans    &kp N0  &kp N4  &kp N5  &kp N6  &trans
+&trans  &kp N1  &kp N2  &kp N3  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans
 &trans  &trans                                                    &trans  &trans
             >;
         };
