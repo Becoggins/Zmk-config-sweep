@@ -149,13 +149,13 @@
             layers = <0 1 2>;
         };
 
-        Left_parentheses_hold_lesser {
+        L_parentheses_H_lesser {
             bindings = <&LParenthesis_Lesser>;
             key-positions = <6 7>;
             layers = <0 1 2>;
         };
 
-        Right_parentheses_hold_greater {
+        R_parentheses_H_greater {
             bindings = <&RParenthesis_Greater>;
             key-positions = <7 8>;
             layers = <0 1 2>;
@@ -179,13 +179,13 @@
             layers = <0 1 2>;
         };
 
-        Left_bracket_hold_Brace {
+        Left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <27 26>;
             layers = <0 1 2>;
         };
 
-        Right_Bracket_hold_Brace {
+        Right_Bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <27 28>;
             layers = <0 1 2>;
@@ -362,6 +362,78 @@
             bindings = <&Tilde_Grave_Accent>;
             key-positions = <15 25>;
             layers = <5 4>;
+        };
+
+        Multiply_2 {
+            bindings = <&kp ASTERISK>;
+            key-positions = <12 2>;
+            layers = <4 5>;
+        };
+
+        Plus_2 {
+            bindings = <&kp PLUS>;
+            key-positions = <3 13 20>;
+            layers = <4 5>;
+        };
+
+        Ampersand_2 {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <1 11>;
+            layers = <4 5>;
+        };
+
+        L_Parentheses_H_lesser_2 {
+            bindings = <&LParenthesis_Lesser>;
+            key-positions = <1 2>;
+            layers = <4 5>;
+        };
+
+        R_Parentheses_H_lesser_2 {
+            bindings = <&RParenthesis_Greater>;
+            key-positions = <3 2>;
+            layers = <4 5>;
+        };
+
+        Slash_2 {
+            bindings = <&kp SLASH>;
+            key-positions = <12 22>;
+            layers = <4 5>;
+        };
+
+        Subtract_2 {
+            bindings = <&kp MINUS>;
+            key-positions = <13 23>;
+            layers = <4 5>;
+        };
+
+        Pipe_2 {
+            bindings = <&kp PIPE>;
+            key-positions = <11 21>;
+            layers = <4 5>;
+        };
+
+        Left_Bracket_2 {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <21 22>;
+            layers = <4 5>;
+        };
+
+        Right_Bracket_2 {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <23 22>;
+            layers = <4 5>;
+        };
+
+        Catet_2 {
+            bindings = <&kp CARET>;
+            key-positions = <4 14>;
+            layers = <4 5>;
+        };
+
+        Underscore_2 {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <14 24>;
+            layers = <4 5>;
         };
     };
 
