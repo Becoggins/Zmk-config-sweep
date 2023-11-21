@@ -213,18 +213,6 @@
             key-positions = <18 19>;
         };
 
-        Swap_left_to_right_RH {
-            bindings = <&tog 4>;
-            key-positions = <13 12 11>;
-            layers = <0 4>;
-        };
-
-        Swap_left_to_right_LH {
-            bindings = <&tog 4>;
-            key-positions = <16 17 18>;
-            layers = <0 4>;
-        };
-
         LCaps_lock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <1 2 3>;
@@ -254,18 +242,6 @@
         Right_Space {
             bindings = <&Hmr RALT SPACE>;
             key-positions = <17 16>;
-        };
-
-        Swap_left_to_right_LH_Nav1 {
-            bindings = <&tog 5>;
-            key-positions = <21 22 23>;
-            layers = <1 5>;
-        };
-
-        Swap_left_to_right_RH_Nav1 {
-            bindings = <&tog 5>;
-            key-positions = <26 27 28>;
-            layers = <1 5>;
         };
 
         Left_num_lock {
@@ -445,6 +421,30 @@
         Toggle_5 {
             bindings = <&tog 5>;
             key-positions = <31 30>;
+            layers = <1 5>;
+        };
+
+        Swap_left_to_right_RH {
+            bindings = <&tog 4>;
+            key-positions = <18 17 16>;
+            layers = <0 4>;
+        };
+
+        Swap_left_to_right_LH {
+            bindings = <&tog 4>;
+            key-positions = <13 12 11>;
+            layers = <0 4>;
+        };
+
+        Swap_left_to_right_RH_Nav1 {
+            bindings = <&tog 5>;
+            key-positions = <28 27 26>;
+            layers = <1 5>;
+        };
+
+        Swap_left_to_right_LH_Nav1 {
+            bindings = <&tog 5>;
+            key-positions = <28 27 26>;
             layers = <1 5>;
         };
     };
