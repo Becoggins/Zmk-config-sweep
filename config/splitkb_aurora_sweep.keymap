@@ -372,7 +372,7 @@
 
         Plus_2 {
             bindings = <&kp PLUS>;
-            key-positions = <3 13 20>;
+            key-positions = <3 13>;
             layers = <4 5>;
         };
 
@@ -434,6 +434,18 @@
             bindings = <&kp UNDERSCORE>;
             key-positions = <14 24>;
             layers = <4 5>;
+        };
+
+        Toggle_4 {
+            bindings = <&tog 4>;
+            key-positions = <32 33>;
+            layers = <0 4>;
+        };
+
+        Toggle_5 {
+            bindings = <&tog 5>;
+            key-positions = <31 30>;
+            layers = <1 5>;
         };
     };
 
@@ -591,7 +603,7 @@
 &kp Q   &kp W          &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I             &kp O               &kp P
 &kp A   &kp S          &kp D  &kp F  &kp G    &kp H  &kp J  &kp K             &kp L               &Period_Colon
 &kp Z   &kp X          &kp C  &kp V  &kp B    &kp N  &kp M  &Semicolon_Comma  &SQT_Double_Quotes  &Question_Exclamation
-&tog 1  &Smart_FX 2 2                                                         &Smart_Num 3 0      &Smart_shift
+&tog 1  &Smart_FX 2 2                                                         &Smart_FX 2 3       &Smart_shift
             >;
         };
 
