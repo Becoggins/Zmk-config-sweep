@@ -439,13 +439,11 @@
         Swap_left_to_right_RH_Nav1 {
             bindings = <&tog 5>;
             key-positions = <28 27 26>;
-            layers = <5 1>;
         };
 
         Swap_left_to_right_LH_Nav1 {
             bindings = <&tog 5>;
             key-positions = <28 27 26>;
-            layers = <5 1>;
         };
 
         Toggle_4_LH {
