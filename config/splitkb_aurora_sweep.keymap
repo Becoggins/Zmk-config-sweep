@@ -262,144 +262,6 @@
             layers = <1>;
         };
 
-        Mute_2 {
-            bindings = <&kp K_MUTE>;
-            key-positions = <1 3>;
-            layers = <5>;
-        };
-
-        Pound_2 {
-            bindings = <&kp POUND>;
-            key-positions = <7 17>;
-            layers = <4 5>;
-        };
-
-        At_sign_2 {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <8 18>;
-            layers = <4 5>;
-        };
-
-        Dollar_2 {
-            bindings = <&kp DOLLAR>;
-            key-positions = <6 16>;
-            layers = <4 5>;
-        };
-
-        Backslash_2 {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <17 27>;
-            layers = <4 5>;
-        };
-
-        Dot_2 {
-            bindings = <&kp PERIOD>;
-            key-positions = <18 28>;
-            layers = <4 5>;
-        };
-
-        Equal_2 {
-            bindings = <&kp EQUAL>;
-            key-positions = <16 26>;
-            layers = <4 5>;
-        };
-
-        Copy_2 {
-            bindings = <&kp K_COPY>;
-            key-positions = <27 28>;
-            layers = <4 5>;
-        };
-
-        Paste_2 {
-            bindings = <&kp K_PASTE>;
-            key-positions = <26 27>;
-            layers = <4 5>;
-        };
-
-        Percent_2 {
-            bindings = <&kp PERCENT>;
-            key-positions = <15 5>;
-            layers = <4 5>;
-        };
-
-        Tiled_2 {
-            bindings = <&Tilde_Grave_Accent>;
-            key-positions = <15 25>;
-            layers = <5 4>;
-        };
-
-        Multiply_2 {
-            bindings = <&kp ASTERISK>;
-            key-positions = <12 2>;
-            layers = <4 5>;
-        };
-
-        Plus_2 {
-            bindings = <&kp PLUS>;
-            key-positions = <3 13>;
-            layers = <4 5>;
-        };
-
-        Ampersand_2 {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <1 11>;
-            layers = <4 5>;
-        };
-
-        L_Parentheses_H_lesser_2 {
-            bindings = <&LParenthesis_Lesser>;
-            key-positions = <1 2>;
-            layers = <4 5>;
-        };
-
-        R_Parentheses_H_lesser_2 {
-            bindings = <&RParenthesis_Greater>;
-            key-positions = <3 2>;
-            layers = <4 5>;
-        };
-
-        Slash_2 {
-            bindings = <&kp SLASH>;
-            key-positions = <12 22>;
-            layers = <4 5>;
-        };
-
-        Subtract_2 {
-            bindings = <&kp MINUS>;
-            key-positions = <13 23>;
-            layers = <4 5>;
-        };
-
-        Pipe_2 {
-            bindings = <&kp PIPE>;
-            key-positions = <11 21>;
-            layers = <4 5>;
-        };
-
-        Left_Bracket_2 {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <21 22>;
-            layers = <4 5>;
-        };
-
-        Right_Bracket_2 {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <23 22>;
-            layers = <4 5>;
-        };
-
-        Catet_2 {
-            bindings = <&kp CARET>;
-            key-positions = <4 14>;
-            layers = <4 5>;
-        };
-
-        Underscore_2 {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <14 24>;
-            layers = <4 5>;
-        };
-
         Toggle_4_RH_2 {
             bindings = <&tog 4>;
             key-positions = <32 33>;
@@ -415,23 +277,25 @@
         Swap_left_to_right_RH {
             bindings = <&tog 4>;
             key-positions = <18 17 16>;
-            layers = <4 0>;
+            layers = <0 4>;
         };
 
         Swap_left_to_right_LH {
             bindings = <&tog 4>;
             key-positions = <12 11 13>;
-            layers = <4 0>;
+            layers = <0 4>;
         };
 
         Swap_left_to_right_RH_Nav1 {
             bindings = <&tog 5>;
             key-positions = <26 27 28>;
+            layers = <1 5>;
         };
 
         Swap_left_to_right_LH_Nav1 {
             bindings = <&tog 5>;
             key-positions = <21 22 23>;
+            layers = <1 5>;
         };
 
         Toggle_4_LH {
@@ -444,18 +308,6 @@
             bindings = <&tog 5>;
             key-positions = <33 32>;
             layers = <1 5>;
-        };
-
-        Left_Brace_2 {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <7 8>;
-            layers = <4 5>;
-        };
-
-        Right_Brace_2 {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <7 6>;
-            layers = <4 5>;
         };
     };
 
