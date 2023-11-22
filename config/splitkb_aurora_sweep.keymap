@@ -287,13 +287,13 @@
         };
 
         Left_Brace_2 {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp LBRC>;
             key-positions = <6 7>;
             layers = <4 5>;
         };
 
         Right_Brace_2 {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp RBRC>;
             key-positions = <8 7>;
             layers = <3 5>;
         };
