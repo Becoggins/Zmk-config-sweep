@@ -382,7 +382,7 @@
             layers = <4 5>;
         };
 
-        Dollar {
+        Big_dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <6 16>;
             layers = <4 5>;
@@ -400,7 +400,7 @@
             layers = <4 5>;
         };
 
-        Dot {
+        Big_dot {
             bindings = <&kp PERIOD>;
             key-positions = <18 28>;
             layers = <5 4>;
