@@ -423,7 +423,8 @@
         Back_Tab: Back_Tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp TAB &kp RSHFT>;
+            bindings = <&kp TAB &kp RSHFT>, <&macro_tap>;
+
             label = "BACK_TAB";
         };
     };
