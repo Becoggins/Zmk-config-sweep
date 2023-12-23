@@ -41,7 +41,7 @@
         compatible = "zmk,combos";
 
         Backspace {
-            bindings = <&Hml LCTRL BACKSPACE>;
+            bindings = <&Hml LSHFT BACKSPACE>;
             key-positions = <12 11>;
         };
 
@@ -111,7 +111,7 @@
         };
 
         Left_Backspace {
-            bindings = <&Hmr RCTRL BACKSPACE>;
+            bindings = <&Hmr RSHFT BACKSPACE>;
             key-positions = <17 18>;
         };
 
@@ -181,12 +181,12 @@
         };
 
         Lshift {
-            bindings = <&Hmr RSHIFT TAB>;
+            bindings = <&Hmr LALT TAB>;
             key-positions = <10 11>;
         };
 
         Rshift {
-            bindings = <&Hmr RSHFT TAB>;
+            bindings = <&Hmr RALT TAB>;
             key-positions = <18 19>;
         };
 
@@ -201,7 +201,7 @@
         };
 
         Left_Space {
-            bindings = <&Hml LALT SPACE>;
+            bindings = <&Hml LCTRL SPACE>;
             key-positions = <13 12>;
         };
 
@@ -216,7 +216,7 @@
         };
 
         Right_Space {
-            bindings = <&Hmr RALT SPACE>;
+            bindings = <&Hmr RCTRL SPACE>;
             key-positions = <17 16>;
         };
 
@@ -260,6 +260,16 @@
             bindings = <&tog 5>;
             key-positions = <21 22 23>;
             layers = <1 5>;
+        };
+
+        Back_Tab_L {
+            bindings = <&Back_Tab>;
+            key-positions = <20 21>;
+        };
+
+        Back_Tab_R {
+            bindings = <&Back_Tab>;
+            key-positions = <29 28>;
         };
     };
 
@@ -406,6 +416,15 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <900>;
             flavor = "balanced";
+        };
+    };
+
+    macros {
+        Back_Tab: Back_Tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB &kp RSHFT>;
+            label = "BACK_TAB";
         };
     };
 
