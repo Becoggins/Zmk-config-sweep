@@ -17,9 +17,7 @@
     flavor = "balanced";
 };
 
-&sk {
-    release-after-ms = <900>;
-};
+&sk { release-after-ms = <900>; };
 
 &sl {
     ignore-modifiers;
@@ -32,9 +30,7 @@
     quick-tap-ms = <900>;
 };
 
-&caps_word {
-    continue-list = <DELETE>;
-};
+&caps_word { continue-list = <DELETE>; };
 
 / {
     combos {
@@ -106,7 +102,7 @@
         };
 
         Tiled {
-            bindings = <&Tilde_Grave_Accent>;
+            bindings = <&kp TILDE>;
             key-positions = <14 24>;
         };
 
@@ -135,13 +131,13 @@
             key-positions = <8 18>;
         };
 
-        L_parentheses_H_lesser {
-            bindings = <&LParenthesis_Lesser>;
+        L_parentheses {
+            bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <6 7>;
         };
 
-        R_parentheses_H_greater {
-            bindings = <&RParenthesis_Greater>;
+        R_parentheses {
+            bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
         };
 
@@ -271,6 +267,26 @@
             bindings = <&Back_Tab>;
             key-positions = <29 28>;
         };
+
+        Grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <0 10>;
+        };
+
+        Smart_shift {
+            bindings = <&Smart_shift>;
+            key-positions = <10 20>;
+        };
+
+        Less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <19 9>;
+        };
+
+        Greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <29 19>;
+        };
     };
 
     behaviors {
@@ -364,24 +380,6 @@
             tapping-term-ms = <500>;
         };
 
-        RParenthesis_Greater: RParenthesis_Greater {
-            compatible = "zmk,behavior-tap-dance";
-            label = "RPARENTHESIS_GREATER";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
-
-            tapping-term-ms = <500>;
-        };
-
-        LParenthesis_Lesser: LParenthesis_Lesser {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LPARENTHESIS_LESSER";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
-
-            tapping-term-ms = <500>;
-        };
-
         Tilde_Grave_Accent: Tilde_Grave_Accent {
             compatible = "zmk,behavior-tap-dance";
             label = "TILDE_GRAVE_ACCENT";
@@ -437,7 +435,7 @@
 &kp Q   &kp W          &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I             &kp O               &kp P
 &kp A   &kp S          &kp D  &kp F  &kp G    &kp H  &kp J  &kp K             &kp L               &Period_Colon
 &kp Z   &kp X          &kp C  &kp V  &kp B    &kp N  &kp M  &Semicolon_Comma  &SQT_Double_Quotes  &Question_Exclamation
-&tog 1  &Smart_FX 2 2                                                         &Smart_FX 3 3       &Smart_shift
+&tog 1  &Smart_FX 2 2                                                         &Smart_FX 3 3       &tog 1
             >;
         };
 
