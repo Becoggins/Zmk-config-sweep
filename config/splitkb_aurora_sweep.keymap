@@ -274,7 +274,7 @@
         };
 
         Smart_shift {
-            bindings = <&Smart_shift>;
+            bindings = <&caps_word>;
             key-positions = <10 20>;
         };
 
